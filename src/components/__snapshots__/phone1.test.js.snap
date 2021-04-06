@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Phone 1 Snapshottest 1`] = `
+<div
+  className="phone-block"
+>
+  <div
+    className="iphone"
+  >
+    nein
+  </div>
+</div>
+`;

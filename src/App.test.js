@@ -11,11 +11,10 @@ const mockStore = configureMockStore(middlewares)
 test('renders learn react link', () => {
   const store = mockStore({ messageReducer: { message: "nein" }, itemsReducer: [] })
   render(
-    <MemoryRouter>
-      <Provider store={store} >
-        <App />
-      </Provider>
-    </MemoryRouter>)
+    <Provider store={store} >
+      <App />
+    </Provider>
+  )
   const linkElement = screen.getByText(/Phones/i);
   expect(linkElement).toBeInTheDocument();
 });

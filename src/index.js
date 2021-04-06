@@ -5,13 +5,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
- 
+import { MemoryRouter } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
+
 
 ReactDOM.render(
   <React.StrictMode>
-     <Provider store={ store() }> 
-       <App />
-     </Provider>
+    <Provider store={store()}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
